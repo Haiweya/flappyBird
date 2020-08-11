@@ -1,0 +1,78 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  box-sizing: border-box;
+}
+.outer{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    height:460px;
+    width:690px;
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px #ccc;
+    overflow: hidden;
+  }
+  .container .sky{
+    position: absolute;  
+    height: 100%;
+    width: 200%;
+    background-image: url("./img/sky.png");
+    background-size: contain;
+    left:0
+    
+  }
+  .container .land{
+    position: absolute;
+    background-image: url("./img/land.png");
+    width: 200%;
+    height:70px;
+    background-position: top;
+    bottom: 0;
+  }
+  .container .pip{
+    position: absolute;
+  }
+  .container .up{
+    background-image: url("./img/pipeDown.png");
+    background-position: bottom;
+    bottom: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container .down{
+    background-image: url("./img/pipeUp.png");
+    background-position: top;
+    top:0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container .bird{
+    width: 32px;
+    border-radius: 50%;
+    height: 32px;
+    position:absolute;
+    background-image: url('./img/bird.png');
+    background-size: cover;
+    top:150px;
+    left:200px;
+    /* border:1px solid black */
+  }
+  .container .swing1{
+     background-position: -2px 0px ;
+  }
+  .container .swing2{
+     background-position: -36px 0px ;
+  }
+  .container .swing3{
+     background-position: -71px 0px ;
+  }
+  
